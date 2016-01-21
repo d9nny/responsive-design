@@ -125,10 +125,13 @@ nav a#pull {
 	nav li {
 		display: block;
 		float: none;
-		width: 100px;
+		width: 150px;
 	}
 	nav li a {
 		border-bottom: 1px solid #576979;
+	}
+	nav li:last-child a {
+		border-right: 1px solid #576979;
 	}
 }
 
