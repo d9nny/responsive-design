@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta name='viewport' content='initial-scale=1, maximum-scale=1'>
+	<link rel="stylesheet" href="./../public/stylesheets/table.css">
+	<script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script src='./../public/js/table.js'></script>
+</head>
+
+<body>
+
+	<div class='table-menu-wrapper'>
+		<a href="#" class='table-menu-btn'>Display</a>
+		<div class='table-menu'>
+			<ul>
+				<li>
+					<label for='toggle-col-1'>Last Trade</label>
+					<input type='checkbox' name='toggle-cols' id='toggle-col-1' value='co-1'>
+				</li>
+				<li>
+					<label for='toggle-col-2'>Trade Times</label>
+					<input type='checkbox' name='toggle-cols' id='toggle-col-2' value='col-2'>
+				</li>
+				<li>
+					<label for='toggle-col-3'>Change</label>
+					<input type='checkbox' name='toggle-cols' id='toggle-col-3' value='col-3'>
+				</li>
+				<li>
+					<label for='toggle-col-4'>Prev Close</label>
+					<input type='checkbox' name='toggle-cols' id='toggle-col-4' value='col-4'>
+				</li>		
+				<li>
+					<label for='toggle-col-5'>Open</label>
+					<input type='checkbox' name='toggle-cols' id='toggle-col-5' value='col-5'>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class='table-wrapper'>
+		<table cellspacing='0' id='tech-companies'>
+			<thead>
+				<tr>
+					<th class='essential persist'>Company</th>
+					<th class='essential'>Last Trade</th>
+					<th class='optional'>Trade Times</th>
+					<th class='essential'>Change</th>
+					<th class='optional'>Prev Close</th>
+					<th class='optional'>Open</th>
+					<th>Bid</th>
+					<th>Ask</th>
+					<th>1Y Target Est</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>GOOG <span class="co-name">Google Inc.</span></th>
+					<td>597.74</td>
+					<td>12:12PM</td>
+					<td>14.81 (2.54%)</td>
+					<td>582.93</td>
+					<td>597.95</td>
+					<td>597.73 x 100</td>
+					<td>597.91 x 300</td>
+					<td>731.10</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+</body>
+
+</html>
