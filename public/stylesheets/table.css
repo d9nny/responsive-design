@@ -49,6 +49,7 @@ tbody th, td {
 }
 
 .table-menu {
+	text-align: right;
 	position: absolute;	
 	right: 0;
 	left: auto;
@@ -57,9 +58,11 @@ tbody th, td {
 	border: 1px solid #ccc;
 	font-size: 1.2em;
 	width: 12em;
+	text-decoration: none;
 }
 
 .table-menu-hidden {
+	display: none;
 	left: -999em;
 	right: auto;
 }
