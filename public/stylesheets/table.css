@@ -1,73 +1,73 @@
-table {
-	width: 100%;
-	font-size: 1.2em;
+ table {
+   width: 100%;
+   font-size: 1.2em;
+   border: 1px solid #4B4A49;
+   color: #666564
 }
 
 thead th {
-	white-space: nowrap;
-	border-bottom: 1px solid #ccc;
-	color: #888;
+   white-space: nowrap;
+   border-bottom: 1px solid #ccc;
+   color: #4B4A49;
 }
-
 th, td {
-	padding: .5em 1em;
-	text-align: right;
+   padding: .5em 1em;
+   text-align: center;
 }
-
-th:first-child, td:first-child {
-	text-align: left;
+th:first-child,
+td:first-child {
+   text-align: left;
 }
-
 tbody th, td {
-	border-bottom: 1px solid #e6e6e6;
+   border-bottom: 1px solid #e6e6e6;
+}
+.enhanced th,
+.enhanced td {
+   display: none;
+}
+.enhanced th.essential,
+.enhanced td.essential {
+   display: table-cell;
 }
 
-.enhanced th, .enhanced td {
-	display: none;
+@media screen and (min-width: 630px) {
+   .enhanced th.optional,
+   .enhanced td.optional {
+      display: table-cell;
+   }
 }
 
-.enhanced th.essentail, .enhanced td.essential {
-	display: table-cell;
-}
-
-@media screen and (min-width: 500px) {
-	.enhanced th.optional, .enhanced td.optional {
-		display: table-cell;
-	}
-}
-
-@media screen and (min-width: 800px) {
-	.enhanced th, .enhanced td {
-		display: table-cell;
-	}
+@media screen and (min-width: 1055px) {
+   .enhanced th,
+   .enhanced td {
+      display: table-cell;
+   }
 }
 
 .table-menu-wrapper {
-	position: absolute;
-	top:-3em;
-	right: 0;
+   position: absolute;
+   top: -3em;
+   right: 0;
 }
 
 .table-menu {
-	text-align: right;
-	position: absolute;	
-	right: 0;
-	left: auto;
-	background-color: #fff;
-	padding: 10px;
-	border: 1px solid #ccc;
-	font-size: 1.2em;
-	width: 12em;
-	text-decoration: none;
+   position: absolute;
+   right: 0;
+   left: auto;
+   background-color: #fff;
+   padding: 10px;
+   border: 1px solid #ccc;
+   font-size: 1.2em;
+   width: 12em;
 }
-
 .table-menu-hidden {
 	display: none;
-	left: -999em;
-	right: auto;
+   left: -999em;
+   right: auto;
 }
 
 .table-wrapper {
-	position: relative;	
-	margin: 5em 5%
+   position: relative;
+
+   margin: 5em auto;
 }
